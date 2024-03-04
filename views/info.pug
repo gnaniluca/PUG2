@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    header.header
+      h1 #{title}
+    article.container
+      
+        div.profile-image(style=`background: url('${mid.immagine}') top center no-repeat; background-size: cover;`)
+        div 
+          h1.profile-name #{mid.nome}
+          p.profile-bio
+            | #{mid.descrizione}
+            br
+            strong Prezzo: #{mid.prezzo}.000,00€
+            br
+            strong Velocità Massima: #{mid.velocitaMassima}
+            br
+            strong Accelerazione: #{mid.accelerazione}
+            br
+            strong Posti e Porte: #{mid.postiEporte}
+            br
+            a.button.button-buy(href='/') Torna Alla home
+            br
+            a.button.button-buy(href=`/${variabile}`) Torna Alle macchine #{variabile}

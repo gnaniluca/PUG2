@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/style.css')
+    title Ciao Mondo
+  body
+    header.header
+      h1 Benvenuto alla pagina principale
+    h2 Seleziona la categoria di auto che desideri visualizzare:
+    article.container
+      div.person
+          div.person-image(style=`background: url('${naked[0].immagine}') top center no-repeat; background-size: cover;`)
+          a(href='/naked') | moto naked 
+    
+      
+
+      div.person
+          div.person-image(style=`background: url('${sportive[0].immagine}') top center no-repeat; background-size: cover;`)
+          a(href='/sportive') | moto sportive

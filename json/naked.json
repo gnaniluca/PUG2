@@ -1,0 +1,22 @@
+{
+    "naked": [
+        {
+           "id": 1,
+           "nome":"CB125R",
+           "cavalli":"15 CV",
+           "velocitamassima":"105 km/h",
+           "prezzo":"€ 4.490,00",
+           "cilindrata":"124,9 cc",
+           "immagine":"https://wallpapercave.com/wp/wp4823010.jpg"
+        },
+        {
+            "id": 2,
+            "nome":"CB1000R",
+            "cavalli":"145,0 CV",
+            "velocitamassima":"299 km/h",
+            "prezzo":"13.590 €",
+            "cilindrata":"998,0 cc",
+            "immagine":"https://i.pinimg.com/originals/a1/85/07/a18507a95cab33b13cdbf00c88b672b1.jpg"
+        }
+    ]
+}

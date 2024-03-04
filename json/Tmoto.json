@@ -1,0 +1,40 @@
+{
+    "tutte moto": [
+        {
+            "id": 1,
+            "nome":"CB125R",
+            "cavalli":"15 CV",
+            "velocitamassima":"105 km/h",
+            "prezzo":"€ 4.490,00",
+            "cilindrata":"124,9 cc",
+            "immagine":"https://wallpapercave.com/wp/wp4823010.jpg"
+         },
+         {
+             "id": 2,
+             "nome":"CB1000R",
+             "cavalli":"145,0 CV",
+             "velocitamassima":"299 km/h",
+             "prezzo":"13.590 €",
+             "cilindrata":"998,0 cc",
+             "immagine":"https://i.pinimg.com/originals/a1/85/07/a18507a95cab33b13cdbf00c88b672b1.jpg"
+         },
+         {
+            "id": 3,
+            "nome":"panigale V2",
+            "cavalli":"155,0 CV",
+            "velocitamassima":"299 km/h",
+            "prezzo":"21,999 €",
+            "cilindrata":"998,0 cc",
+            "immagine":"https://cdn-img.moto.it/images/23486239/1200x/ducati-panigale-v2-01.jpeg"
+         },
+         {
+            "id": 4,
+            "nome":"panigale V4",
+            "cavalli":"221 CV",
+            "velocitamassima":"340 km/h",
+            "prezzo":"26,999 €",
+            "cilindrata":"998,0 cc",
+            "immagine":"https://images.ctfassets.net/x7j9qwvpvr5s/SC1kfXyuyc2i0muMugeG/387982606ab7efa495c8039fe5e5396e/Panigale-V4-R-MY19-Red-01-Model-Preview-1050x650.png"
+         }
+    ]
+}
