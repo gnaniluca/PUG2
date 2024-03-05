@@ -3,21 +3,19 @@ html(lang="en")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href='/css/style.css')
-    title Ciao Mondo
-  body
-    header.header
-      h1 #{title}
-    article.container
-      each m in moto
-        div.person
-          div.person-image(style=`background: url('${m.immagine}') top center no-repeat; background-size: cover;`)
+    title= title
+    link(rel='stylesheet', href='/sportive.css')
 
-          h2.person-name 
-            | #{m.nome}
-          a(href=`/profile?id=${m.id}&page=${variabile}`)
-            | View Profile
- 
-  div.container
-    a(href="") 
-    a.button.button-buy(href='/') Torna Alla home
+  body
+    .container
+      .header
+        h1 Benvenuto alla pagina delle auto sportive
+      .selection
+        h2 Seleziona di quale auto vuoi visualizzare la scheda tecnica:
+
+      .moto-box
+        each m in moto
+          .person
+            a(href=`/moto/${m.id}`)
+              img.moto-image(src=m.immagine, alt=m.nome)
+            a.person-link(href=`/moto/${m.id}`) #{m.nome}

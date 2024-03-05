@@ -3,19 +3,20 @@ html(lang="en")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href='/css/style.css')
-    title Ciao Mondo
+    title= title
+    link(rel='stylesheet', href='/home.css')
   body
-    header.header
-      h1 Benvenuto alla pagina principale
-    h2 Seleziona la categoria di auto che desideri visualizzare:
-    article.container
-      div.person
-          div.person-image(style=`background: url('${naked[0].immagine}') top center no-repeat; background-size: cover;`)
-          a(href='/naked') | moto naked 
-    
-      
-
-      div.person
-          div.person-image(style=`background: url('${sportive[0].immagine}') top center no-repeat; background-size: cover;`)
-          a(href='/sportive') | moto sportive
+    .container
+      .header
+        h1 Benvenuto alla pagina principale
+      .selection
+        h2 Seleziona la categoria di auto che desideri visualizzare:
+      .car-box
+        .person
+          a(href='/naked')
+            img.car-image(src='https://ktmfarioli.com/storage/media/10879/MY24-KTM-1390-SUPER-DUKE-R_EVO-(1).jpg', alt='Moto Naked')
+          a.person-link(href='/naked') Auto Utilitarie
+        .person
+          a(href='/sportive')
+            img.car-image(src='https://cdn-img.moto.it/images/23608669/2050x/yamaha-yzf-r6-race-2021-01.jpeg', alt='Moto Sportive')
+          a.person-link(href='/sportive') Moto Sportive
